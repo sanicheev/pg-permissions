@@ -1,0 +1,15 @@
+database:
+  host: 127.0.0.1
+  name: mydatabase # database to connect to
+  user: myusername
+  password: 12345
+  # By default only write permissions will be processed. Omit this one if you want to process read permissions as well.
+  permissions: W
+  performance:
+    # Increase that to improve runtime. Please be aware it will generate more connections to your existing database!
+    maxrequests: 10
+  report:
+    # Set to false if you would like to skip html report generation
+    html: true
+    # Set to false if you would like to skip json report generation
+    json: true
